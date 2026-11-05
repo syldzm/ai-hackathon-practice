@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Hackathon Practice</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f6f8;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 500px;
+            margin: auto;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+        }
+        input {
+            width: 80%;
+            padding: 12px;
+            margin: 15px 0;
+        }
+        button {
+            padding: 12px 24px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>이것은 타이틀이다</h1>
+        <p>이것은 서브 타이틀이다</p>
+
+        <form method="POST">
+            <input type="text" name="question"
+                   placeholder="이곳에 글자를 입력" required>
+            <button type="submit">입력하기</button>
+        </form>
+
+        {% if answer %}
+            <h3>서버 응답</h3>
+            <p>{{ answer }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>
